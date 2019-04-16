@@ -90,3 +90,21 @@
         }
     }
 }
+
+.post_content{
+    background: white;
+    border-radius: .5em;
+    padding: 2em 5%;
+    h1{
+        font-weight: 100;
+        color: #397CAC;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    p{
+        color: rgb(97, 100, 104);
+        font-size: 0.9 rem;
+        font-weight: 100;
+        line-height: 1.3;
+    }
+}
