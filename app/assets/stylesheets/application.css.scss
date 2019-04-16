@@ -34,6 +34,16 @@
     clear: both;
 }
 
+.button {
+    color: #397CAC;
+    padding: 0.4em 0.8em;
+    border: 1px solid #397CAC;
+    text-decoration: none;
+    border-radius: .2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
 .main_header {
     width: 100%;
     margin: 0 auto;
@@ -108,5 +118,55 @@
         font-size: 0.9 rem;
         font-weight: 100;
         line-height: 1.3;
+    }
+    #comments {
+        .comment {
+            border-bottom: 1px solid #d1d1d1;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+            .comment_content {
+                margin: 0;
+                padding: 0;
+            }
+            .comment_author {
+                color: #397CAC;
+                margin-top: .5rem;
+                font-size: 0.6em;
+                font-weight: 700;
+            }
+            .content {
+                width: 70%;
+                float: left;
+            }
+            .buttons {
+                width: 30%;
+                float: right;
+                font-size: .8rem;
+                text-align: right;
+                a {
+                    color: #397CAC;
+                    border: 1px solid #397CAC;
+                    border-radius: 0.2em;
+                    padding: .5em 1em;
+                    text-decoration: none;
+                }
+            }
+        }
+        textarea {
+            border: 1px solid #d1d1d1;
+            width: 100%;
+            min-height: 200px;
+            border-radius: .2em;
+            margin: 1em 0;
+        }
+        input[type="submit"] {
+            background: #397CAC;
+            color: white;
+            padding: 0.4em 0.8em;
+            border: 1px solid #397CAC;
+            border-radius: .2rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
     }
 }
