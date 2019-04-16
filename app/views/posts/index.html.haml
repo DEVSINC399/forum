@@ -1,7 +1,9 @@
-- @posts.each do |post|
-    %h2= link_to post.title, post
-    %p= post.content
-    %p
-        Published
-        = time_ago_in_words(post.created_at)
-        ago
+#posts
+    - @posts.each do |post|
+        .post
+            %h2.title= link_to post.title, post
+            %p.content= post.content
+            %p.date
+                Published
+                = time_ago_in_words(post.created_at)
+                ago
