@@ -5,7 +5,7 @@
     = csrf_meta_tags
     = csp_meta_tag
 
-    %link{ "rel" => "stylesheet", "href" => "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300", "type" => "text/css" }
+    %link{ "rel" => "stylesheet", "href" => "https://fonts.googleapis.com/css?family=Lora", "type" => "text/css" }
     %link{ "rel" => "stylesheet", "href" => "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css", "type" => "text/css" }
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
@@ -15,9 +15,13 @@
       #header.main_header.clearfix
         .wrapper
           #logo
-            %p My Forum
+            %p= link_to 'My Forum', root_path
           #buttons
-            = link_to 'Add new Post', new_post_path
+            - if user_signed_in?
+              = link_to 'Add new Post', new_post_path
+            - else
+              = link_to 'Login', new_user_session_path   
+              = link_to 'Signup', new_user_registration_path         
     .wrapper
       %p.notice= notice
       %p.alert= alert

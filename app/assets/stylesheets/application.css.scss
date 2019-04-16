@@ -15,7 +15,7 @@
  */
 
  body{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lora', serif;
     background: #EDEFF0;
  }
 
@@ -39,12 +39,14 @@
     margin: 0 auto;
     background: white;
     #logo {
-        p{
-            font-size: 1.2rem;
+        float: left;
+        a {
+            font-size: 1.3rem;
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: 1px;
-            float: left;
+            text-decoration: none;
+            color: #397CAC;
         }
     }
     #buttons{
@@ -81,8 +83,8 @@
         .content{
             margin-top: 0.25rem;
             text-align: justify;
-            // color: #6F5F5F;
-            font-size: 1rem;
+            color: rgb(97, 100, 104);
+            font-size: 0.9rem;
         }
         .date{
             margin-top: 8px;
