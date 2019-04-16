@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+    %title Forum
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    %link{ "rel" => "stylesheet", "href" => "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300", "type" => "text/css" }
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  
+  %body
+    %nav
+      #header.main_header.clearfix
+        #logo
+          %p My Forum
+        #buttons
+          = link_to 'Add new Post', new_post_path
+    .wrapper
+      %p.notice= notice
+      %p.alert= alert
+    .wrapper
+      = yield

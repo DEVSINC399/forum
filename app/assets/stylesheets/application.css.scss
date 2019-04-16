@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: #EDEFF0;
+ }
+
+.wrapper {
+    width: 60%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix:after, .clearfix:before{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.main_header {
+    width: 60%;
+    max-width: 1140px;
+    margin: 0 auto;
+    background: white;
+    #logo {
+        p{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            float: left;
+        }
+    }
+    #buttons{
+        float: right;
+    }
+}
